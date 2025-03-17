@@ -24,3 +24,32 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.marque-infinite{
+  /* margin: 30px auto; */
+  border: 1px solid #000;
+  background-color: #d6fd52 ;
+  overflow: hidden;
+  color: #000;
+  font-weight: bold;
+}
+
+.marque-infinite div{
+  display: flex;
+  width: 200%;
+  animation: marque-infinite 9s linear infinite;
+}
+
+.marque-infinite h1{
+  white-space: nowrap;
+  width: 100%;
+}
+
+@keyframes marque-infinite{
+  0% {
+    transform: translateX(0%)
+  }
+  100%{
+    transform: translateX(-50%)
+  }
+}
