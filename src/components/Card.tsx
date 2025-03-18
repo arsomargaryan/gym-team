@@ -23,8 +23,8 @@ export default function Card({card,index,selected,setSelected}:Props) {
         <div>{card.name}</div>
         <div className=" text-xs text-gray-400 mb-2">{card.about}</div>
         <Button text="LEARN MORE" isIcon style=" text-sm"/>
-        <div className=" rounded-[50%] h-8 w-8  bg-[#d6fd52] flex justify-center items-center absolute bottom-5 right-5">
-        <i className="fa-solid fa-bolt text-black "></i>
+        <div className={`rounded-[50%] h-8 w-8  flex justify-center items-center absolute bottom-5 right-5  ${selected === index?"bg-black":"bg-[#d6fd52]"}`} >
+        <i className={`fa-solid fa-bolt   ${selected === index?"text-white":"text-black"}`}></i>
         </div>
     </div>
   )
