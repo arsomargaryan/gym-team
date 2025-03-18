@@ -2,6 +2,7 @@ import type { Card } from "@/constant/data"
 import Image from "next/image";
 import Button from "./Button";
 import { Dispatch, SetStateAction } from "react";
+import { tek } from "@/constant/font";
 
 interface Props{
     card: Card
@@ -20,7 +21,7 @@ export default function Card({card,index,selected,setSelected}:Props) {
         <div className=" object-cover w-15 h-15 mb-3 flex justify-center items-center">
             <Image src={card.src} alt={card.name} width={54} height={54} />
         </div>
-        <div className="font-bold text-lg  tracking-wider">{card.name}</div>
+        <div className={`font-bold text-lg  tracking-wider ${tek.className}`}>{card.name}</div>
         <div className=" text-xs text-gray-400 mb-2">{card.about}</div>
         <Button text="LEARN MORE" isIcon style=" text-sm"/>
         <div className={`rounded-[50%] h-8 w-8  flex justify-center items-center absolute bottom-11 right-5  ${selected === index?"bg-black":"bg-[#d6fd52]"}`} >

@@ -1,9 +1,13 @@
+// import { tek } from "@/constant/font";
+import { tek } from "@/constant/font";
 import Button from "./Button";
+
+
 
 export default function HeaderMainInfo() {
   return (
     <div className="flex flex-col justify-center items-center mt-15">
-        <div className="text-3xl sm:text-6xl lg:text-8xl xl:text-9xl  text-center font">WORK WITH PROFESSIONALS</div>
+        <div className={`text-3xl sm:text-6xl lg:text-8xl xl:text-9xl  text-center font ${tek.className}`}>WORK WITH PROFESSIONALS</div>
         <div className=" text-xs sm:text-sm text-center text-gray-400 w-96">Lorem lpsum dolar sit arnet consectetur. Neque dolor in semper aliqmenr facilsis tristique placerat sit</div>
         <div className="flex justify-center items-center gap-3 mt-3">
             <Button text="START NOW" style=" bg-[#d6fd52] shadow-[3px_1px_15px_1px_rgba(214,253,82,255)] text-black rounded-3xl px-3 py-1 text-sm"/>

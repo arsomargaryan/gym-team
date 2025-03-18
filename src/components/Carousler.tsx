@@ -3,6 +3,7 @@ import { data } from "@/constant/data";
 import { Carousel } from 'antd';
 import Card from "./Card";
 import { useState, useEffect } from "react";
+import { tek } from "@/constant/font";
 
 
 export default function Carousler() {
@@ -32,7 +33,7 @@ export default function Carousler() {
   
   return (
     <div className="m-3 sm:m-10 md:m-30 xl:m-40 2xl:m-50 ">
-            <div className=" text-3xl sm:text-4xl md:text-5xl xl:text-6xl mb-7 mt-10 sm:mt-0 sm:mb-4">WHY CHOOSE US</div>
+            <div className={` text-3xl sm:text-4xl md:text-5xl xl:text-6xl mb-7 mt-10 sm:mt-0 sm:mb-4 ${tek.className}`}>WHY CHOOSE US</div>
 
             <Carousel
         dots={{ className: "custom-dots" }}

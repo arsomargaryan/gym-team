@@ -1,9 +1,16 @@
+import {Play} from 'next/font/google'
+
+
+const play = Play({
+  subsets: ['latin'],
+  weight: "400"
+})
 
 export default function Header() {
   
   return (
     <nav className="flex  justify-between px-3 sm:justify-around items-center text-white lg:px-30 sm:px-10 py-5 relative z-10">
-        <div className="text-2xl">GYMTEAM</div>
+        <div className={`text-2xl ${play.className}`}>GYMTEAM</div>
         <div className=" hidden sm:flex justify-between items-center gap-7 text-gray-400 ">
             <div className="text-sm">Home</div>
             <div className="text-sm">Shop</div>
