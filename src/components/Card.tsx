@@ -14,7 +14,7 @@ export default function Card({card,index,selected,setSelected}:Props) {
  console.log(selected,index)
   return (
     <div 
-    className={` h-78  rounded-2xl p-4 flex justify-center items-start flex-col gap-3 relative mx-0 my-1  sm:my-0 sm:mx-1 cursor-pointer ${selected === index?"bg-[#d6fd52]":"bg-[#252525]"}`}
+    className={` h-78  rounded-2xl p-4 flex justify-center items-start flex-col gap-3 relative mx-0 my-1  sm:my-0 sm:mx-3 cursor-pointer ${selected === index?"bg-[#d6fd52]":"bg-[#252525]"}`}
     onClick={()=>setSelected(index)}
     >
         <div className=" object-cover w-15 h-15 mb-3 flex justify-center items-center">
