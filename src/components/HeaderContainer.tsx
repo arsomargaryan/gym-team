@@ -3,7 +3,7 @@ import HeaderMainInfo from "./HeaderMainInfo";
 
 export default function HeaderContainer() {
   return (
-    <div className="relative h-[40rem] ">
+    <div className="relative h-[30rem] sm:h-[40rem] ">
       <div className="absolute inset-0 opacity-15 bg-cover bg-[url(/mainphoto.jpg)]" />
       <div className="relative">
         <Header />

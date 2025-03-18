@@ -53,3 +53,80 @@ body {
     transform: translateX(-50%)
   }
 }
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.card-wrapper {
+  display: flex;
+  gap: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide-left {
+  animation: slideLeft 0.3s forwards;
+}
+
+.slide-right {
+  animation: slideRight 0.3s forwards;
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+
+.ant-carousel .slick-prev,
+.ant-carousel .slick-next {
+  color: white!important; 
+  font-size: 50px !important;
+  border: white;
+  z-index: 10;
+}
+.ant-carousel .slick-prev{
+  left: -30px !important;
+
+}
+.ant-carousel .slick-next{
+  right: -30px !important;
+
+}
+
+
+
+.custom-dots {
+  position: absolute;
+  bottom: -30px !important;
+}
+
+@media (max-width: 640px) {
+  .ant-carousel .slick-prev {
+    left: 50% !important;
+    top:-20px !important
+  }
+  .ant-carousel .slick-next {
+    right: -20px !important;
+    bottom: -20px !important;
+  }
+  .custom-dots {
+    left:-5px !important
+  }
+}

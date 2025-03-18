@@ -1,9 +1,10 @@
 
 export default function Header() {
+  
   return (
-    <nav className="flex justify-around items-center text-white px-30 py-5 relative z-10">
+    <nav className="flex  justify-between px-3 sm:justify-around items-center text-white lg:px-30 sm:px-10 py-5 relative z-10">
         <div className="text-2xl">GYMTEAM</div>
-        <div className="flex justify-between items-center gap-7 text-gray-400">
+        <div className=" hidden sm:flex justify-between items-center gap-7 text-gray-400 ">
             <div className="text-sm">Home</div>
             <div className="text-sm">Shop</div>
             <div className="text-sm">Blog</div>

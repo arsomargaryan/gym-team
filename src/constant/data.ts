@@ -6,13 +6,13 @@ import photo4 from "../../public/photo4.png"
 import photo5 from "../../public/photo5.png"
 
 
-interface Property{
+export interface Card{
     src:string | StaticImageData; 
     name:string
     about:string
 }
 
-export const data:Property[] = [
+export const data:Card[] = [
     {
       src:photo1,
       name: "MUSCLES BUILDING",
